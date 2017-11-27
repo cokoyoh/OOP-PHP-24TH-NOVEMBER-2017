@@ -1,21 +1,22 @@
 <?php
-class Rectangle extends Shape implements Cytonn
+namespace Yoda;
+class Cuboid extends Rectangle implements Cytonn
 {
-    private $width;
-    public function __construct($length, $width) {
-        parent::__construct($length);
-        $this->width = $width;
+    private $height;
+    public function __construct($length, $width, $height) {
+        parent::__construct($length, $width);
+        $this->height = $height;
     }
 
-    public function setWidth($width) {
-        $this->width = $width;
+    public function setHeight($height) {
+        $this->height = $height;
     }
 
-    public function getWidth() {
-        return $this->width;
+    public function getHeight() {
+        return $this->height;
     }
 
     public function area() {
-        return $this->getWidth() * parent::getLength();
+        return  $this->getHeight() * parent::area();
     }
 }

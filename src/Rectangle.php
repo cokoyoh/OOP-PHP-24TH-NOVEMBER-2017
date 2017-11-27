@@ -1,4 +1,5 @@
 <?php
+namespace Yoda;
 class Rectangle extends Shape implements Cytonn
 {
     private $width;

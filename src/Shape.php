@@ -1,4 +1,5 @@
 <?php
+namespace Yoda;
 class Shape
 {
     private $length;
